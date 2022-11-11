@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@800&family=Wallpoet&display=swap");
+
+* {
+  font-family: "Nunito Sans", sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  background-color: #38373e;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.galeria {
+  width: 100%;
+  overflow: hidden;
+}
+
+#galeria__container {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 300%;
+  position: relative;
+  transition: all 0.5s ease;
+
+  max-height: 70vh;
+}
+
+#galeria__container img {
+  width: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+.counter__buttons {
+  display: flex;
+  gap: 1em;
+  margin-top: 1em;
+}
+
+.counter__buttons a {
+  color: white;
+  background-color: #1a1a1a;
+  padding: 0.5em 1em;
+  border-radius: 0.5em;
+}
+
+.counter p {
+  color: white;
+  font-weight: bold;
+  font-size: 5em;
+}
